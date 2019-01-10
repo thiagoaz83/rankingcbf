@@ -5,7 +5,7 @@ Created on Thu Nov 30 17:13:39 2017
 @author: Thiago
 
 Automatização da criação do Ranking da CBF de clubes e de federações a partir de uma base de dados no formato excel.
-Cálculo válido para rankings a partir do ano de 2016.
+Cálculo válido para rankings a partir do ano de 2017.
 """
 
 import pandas as pd
@@ -52,7 +52,7 @@ def calcularanking(ano, pb = pontostotal):
     pontosbase = pb.copy() #Cópia da lista total de pontos
     
     #Atribui pesos aos pontos de acordo com o ano e descarta resultados fora do prazo.
-    pontosbase.Ano = 5 + pontosbase.Ano - ano
+    pontosbase.Ano = 5 + 1 + pontosbase.Ano - ano
     pontosbase = pontosbase[(pontosbase.Ano > 0) & (pontosbase.Ano <= 5)]
     pontosbase.Pontos = pontosbase.Pontos * pontosbase.Ano
     pontosbase.drop("Ano", axis = 1, inplace = True)
