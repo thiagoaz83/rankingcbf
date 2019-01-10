@@ -16,6 +16,7 @@ Observações:
 
 
 Referências:
+
 Divulgação do Ranking 2019:
 https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro/palmeiras-assume-ponta-isolada-do-ranking-nacional-de-clubes-da-cbf
 
